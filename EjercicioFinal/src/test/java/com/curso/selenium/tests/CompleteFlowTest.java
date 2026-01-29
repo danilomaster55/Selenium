@@ -1,13 +1,16 @@
 package com.curso.selenium.tests;
 
+import com.curso.selenium.listeners.TestListener;
 import com.curso.selenium.pages.*;
 import com.curso.selenium.utils.DriverFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+@ExtendWith(TestListener.class)
 public class CompleteFlowTest {
     @BeforeEach
     public void setUp(){
